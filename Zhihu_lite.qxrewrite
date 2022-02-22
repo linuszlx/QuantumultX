@@ -9,7 +9,7 @@
 # 知乎其他广告拦截
 ^https?:\/\/api\.zhihu\.com\/(v3\/package|me\/guides|drama\/living-info|ad|fringe|commercial|market\/popovers|.*featured-comment-ad) url reject-dict
 
-^https?:\/\/api\.zhihu\.com\/log_collect\/analysis url reject
+^https?:\/\/api\.zhihu\.com\/log_collect\/analysis url reject-dict
 
 # 知乎网页版去广告
 ^https?:\/\/www\.zhihu\.com\/api\/v4/(questions|anwsers)\/\d+/related-readings url reject-dict
