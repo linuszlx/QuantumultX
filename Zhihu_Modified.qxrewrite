@@ -3,7 +3,8 @@
 # 知乎信息流去广告
 ^https?:\/\/api\.zhihu\.com\/(moments|topstory)(\/|\?)?(recommend|action=|feed_type=)(?!\/people) url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu-Plus.js
 # 知乎信息流去广告
-^https?:\/\/api\.zhihu\.com\/moments_V2\? url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu-Plus.js
+^https?:\/\/api\.zhihu\.com\/moments_V2\?action url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu-Plus.js
+^https?:\/\/api\.zhihu\.com\/moments_V2\?feed url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu-Plus.js
 # 知乎回答列表去广告
 ^https?:\/\/api\.zhihu\.com\/v4\/questions url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu-Plus.js
 # 知乎评论去广告
