@@ -1,4 +1,4 @@
-hostname = *.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com
+hostname = api.live.bilibili.com,api.vc.bilibili.com,manga.bilibili.com,app.bilibili.com,api.bilibili.com
 
 # 去除动态中的话题
 ^https?:\/\/api\.vc\.bilibili\.com\/topic_svr\/v1\/topic_svr url reject-dict
