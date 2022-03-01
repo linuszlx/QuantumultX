@@ -1,8 +1,5 @@
 hostname = api.live.bilibili.com,api.vc.bilibili.com,manga.bilibili.com,app.bilibili.com,api.bilibili.com
 
-
-HOST,grpc.biliapi.net,reject
-
 # 去除动态中的话题
 ^https?:\/\/api\.vc\.bilibili\.com\/topic_svr\/v1\/topic_svr url reject-dict
 # 去除动态中的最常访问
