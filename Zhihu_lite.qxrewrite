@@ -9,4 +9,4 @@
 # 知乎其他广告拦截
 ^https?:\/\/api\.zhihu\.com\/(v3\/package|me\/guides|drama\/living-info|ad|fringe|commercial|market\/popovers|.*featured-comment-ad) url reject-dict
 ^https?:\/\/sugar\.zhihu\.com url reject-array
-hostname = api.zhihu.com,sugar.zhihu.com
+hostname = *.zhihu.com,api.zhihu.com,sugar.zhihu.com
