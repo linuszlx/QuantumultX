@@ -1,4 +1,4 @@
-hostname = *.bilibili.com, grpc.biliapi.net
+hostname = *.bilibili.com, grpc.biliapi.net, 116.163.45.138, 123.6.7.66, 123.6.7.67
 
 # 其他去广告
 ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash url reject-dict
