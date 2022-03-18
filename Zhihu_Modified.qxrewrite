@@ -2,9 +2,11 @@
 ^https?:\/\/api\.zhihu\.com\/people\/ url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu-Plus.js
 # 知乎信息流去广告
 ^https?:\/\/api\.zhihu\.com\/(moments|topstory)(\/|\?)?(recommend|action=|feed_type=)(?!\/people) url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu-Plus.js
-# 知乎信息流去广告
+# 知乎关注页面流去视频
 ^https?:\/\/api\.zhihu\.com\/moments_v2\?action url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu_Follow.js
 ^https?:\/\/api\.zhihu\.com\/moments_v2\?feed url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu_Follow.js
+# 知乎屏蔽视频页面视频
+^https?:\/\/api.zhihu.com\/zvideo-tabs\/tabs\/choice\/feeds\/ url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu-VideoF.js
 # 知乎回答列表去广告
 ^https?:\/\/api\.zhihu\.com\/v4\/questions url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu-Plus.js
 # 知乎评论去广告
@@ -17,11 +19,6 @@ URL-REGEX,^https?:\/\/api\.zhihu\.com\/commercial_api\/launch_v2\? url reject-di
 ^https?:\/\/www\.zhihu\.com\/api\/v4\/answers\/\d+\/recommendations url reject-dict
 # 知乎其他广告拦截
 ^https?:\/\/api\.zhihu\.com\/(notifications\/v3\/count|v3\/package|me\/guides|drama\/living-info|ad|fringe|commercial|market\/popovers|.*featured-comment-ad) url reject-dict
-# 知乎网页版去广告
-^https?:\/\/www\.zhihu\.com\/api\/v4/(questions|anwsers)\/\d+/related-readings url reject-dict
-^https?:\/\/www\.zhihu\.com\/api\/v4\/hot_recommendation url reject-dict
-^https?:\/\/www\.zhihu\.com\/commercial_api\/banners_v3\/mobile_banner url reject-dict
-^https?:\/\/zhuanlan\.zhihu\.com\/api\/articles\/\d+\/recommendation url reject-dict
 # 知乎品牌提问广告
 ^https?:\/\/api\.zhihu\.com\/brand\/question\/\d+/card\? url reject-dict
 ^https?:\/\/www\.zhihu\.com\/api\/v\d+\/brand\/question/\d+/card\? url reject-dict

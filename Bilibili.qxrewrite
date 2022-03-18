@@ -1,31 +1,23 @@
-hostname = *.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com
+hostname = *.bilibili.com
 
-# 去除动态中的话题
-^https?:\/\/api\.vc\.bilibili\.com\/topic_svr\/v1\/topic_svr url reject-dict
-# 去除动态中的最常访问
-^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/mix_uplist url reject-dict
 # 其他去广告
 ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash url reject-dict
-^https?:\/\/ap(i|p)\.bilibili\.com\/((x\/v2|pgc)\/(search\/defaultword|season\/rank\/cn)|(pgc/season/rank/cn|x/v2/(search/(defaultword|hot|recommend|resource)))) url reject-dict
-^https?:\/\/api\.bilibili\.com\/x\/v2\/dm\/ad url reject-dict
+^https?:\/\/app\.bilibili\.com\/((x\/v2|pgc)\/(search\/defaultword|season\/rank\/cn)|(pgc/season/rank/cn|x/v2/(search/(defaultword|hot|recommend|resource)))) url reject-dict
 ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.comic\/flash url reject-dict
 # 上栏去广告
 ^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity\? url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_Top.js
+
 # 分区优化
 ^https?:\/\/app\.bilibili\.com\/x\/v2\/channel\/region\/list\? url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_FQ.js
 # 推荐去广告
 ^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili.js
-# 追番去广告
-^https?:\/\/api\.bilibili\.com\/pgc\/page\/bangumi url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili.js
-# 直播去广告
-^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili.js
-# 动态去广告
-^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\? url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili.js
 # 开屏去广告
 ^https?:\/\/app\.bilibili\.com\/x\/v2\/splash\/list url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili.js
 # 标签页处理
-^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili.js
+^https:\/\/app\.bilibili\.com\/x\/resource\/show\/tab url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili.js
 # 我的页面处理
-^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili.js
+^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_Pg.js
 # 去除皮肤
 ^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/skin url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_PF.js
+# 动态去广告
+^https:\/\/app\.bilibili\.com\/bilibili\.app\.(view\.v1\.View\/View|dynamic\.v2\.Dynamic\/DynAll)$ url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_Proto.js
