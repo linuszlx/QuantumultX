@@ -1,0 +1,32 @@
+# 知乎处理用户信息
+^https?:\/\/api\.zhihu\.com\/people\/ url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu-Plus.js
+# 知乎信息流去广告
+^https?:\/\/api\.zhihu\.com\/(moments|topstory)(\/|\?)?(recommend|action=|feed_type=)(?!\/people) url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu-Plus.js
+# 知乎关注页面流去视频
+^https?:\/\/api\.zhihu\.com\/moments_v2\?action url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu_Follow.js
+^https?:\/\/api\.zhihu\.com\/moments_v2\?feed url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu_Follow.js
+# 知乎屏蔽视频页面视频
+^https?:\/\/api.zhihu.com\/zvideo-tabs\/tabs\/choice\/feeds\/ url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu-VideoF.js
+# 知乎回答列表去广告
+^https?:\/\/api\.zhihu\.com\/v4\/questions url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu-Plus.js
+# 知乎评论去广告
+^https?:\/\/api\.zhihu\.com\/(comment_v5\/)?(answers|comments?|articles|pins)\/\d+\/(root_|child_)?comments? url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu-Plus.js
+# 优化软件配置
+^https?:\/\/appcloud2\.zhihu\.com\/v\d+\/config url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu-Plus.js
+# 拦截知乎开屏广告
+URL-REGEX,^https?:\/\/api\.zhihu\.com\/commercial_api\/launch_v2\? url reject-dict
+# 知乎去除回答下的广告
+^https?:\/\/www\.zhihu\.com\/api\/v4\/answers\/\d+\/recommendations url reject-dict
+# 知乎其他广告拦截
+^https?:\/\/api\.zhihu\.com\/(notifications\/v3\/count|v3\/package|me\/guides|drama\/living-info|ad|fringe|commercial|market\/popovers|.*featured-comment-ad) url reject-dict
+# 知乎品牌提问广告
+^https?:\/\/api\.zhihu\.com\/brand\/question\/\d+/card\? url reject-dict
+^https?:\/\/www\.zhihu\.com\/api\/v\d+\/brand\/question/\d+/card\? url reject-dict
+# 屏蔽消息页面上拉的用户精选
+^https?:\/\/api\.zhihu\.com/moments/hybrid\? url reject-dict
+# 知乎下发的配置，如皮肤等
+^https?:\/\/api\.zhihu\.com\/ab\/api\/v1\/products\/zhihu\/platforms\/ios\/config url reject-200
+# 知乎去除Tab页关注人头像
+^https?:\/\/api\.zhihu\.com\/moments\/tab_v2 url reject-dict
+
+hostname = www.zhihu.com,api.zhihu.com,zhuanlan.zhihu.com,103.41.167.236,103.41.167.234,103.41.167.235,103.41.167.226

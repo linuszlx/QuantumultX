@@ -8,5 +8,5 @@
 ^https?:\/\/www\.zhihu\.com\/api\/v4\/answers\/\d+\/recommendations url reject-dict
 # 知乎其他广告拦截
 ^https?:\/\/api\.zhihu\.com\/(v3\/package|me\/guides|drama\/living-info|ad|fringe|commercial|market\/popovers|.*featured-comment-ad) url reject-dict
-
-hostname = api.zhihu.com
+^https?:\/\/sugar\.zhihu\.com url reject-array
+hostname = *.zhihu.com,api.zhihu.com,sugar.zhihu.com
