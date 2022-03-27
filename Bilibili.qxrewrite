@@ -1,4 +1,4 @@
-hostname = app.bilibili.com, api.bilibili.com
+hostname = app.bilibili.com, api.bilibili.com, grpc.biliapi.net
 
 # 其他去广告
 ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash url reject-dict
