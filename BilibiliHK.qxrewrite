@@ -13,3 +13,5 @@ hostname = *.bilibili.com
 ^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_Pg.js
 # 去除皮肤
 ^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/skin url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_PF.js
+# 动态去广告
+^https:\/\/app\.bilibili\.com\/bilibili\.app\.dynamic\.v2\.Dynamic\/DynAll url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_Proto.js
