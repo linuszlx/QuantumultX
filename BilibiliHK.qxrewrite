@@ -7,8 +7,6 @@ hostname = *.bilibili.com
 
 # 分区优化
 ^https?:\/\/app\.bilibili\.com\/x\/v2\/channel\/region\/list\? url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_FQ.js
-# 开屏去广告
-^https?:\/\/app\.bilibili\.com\/x\/v2\/splash\/list url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili.js
 # 标签页处理
 ^https:\/\/app\.bilibili\.com\/x\/resource\/show\/tab url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_HP.js
 # 我的页面处理
