@@ -5,6 +5,11 @@ hostname = app.bilibili.com, manga.bilibili.com, grpc.biliapi.net
 ^https?:\/\/app\.bilibili\.com\/((x\/v2|pgc)\/(search\/defaultword|season\/rank\/cn)|(pgc/season/rank/cn|x/v2/(search/(defaultword|hot|recommend|resource)))) url reject-dict
 ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.comic\/flash url reject-dict
 
+# 屏蔽DNS
+http://203.107.1.33/ url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/BiliDns.js
+http://203.107.1.65/ url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/BiliDns.js
+http://203.107.1.66/ url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/BiliDns.js
+
 
 # 上栏去广告
 ^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity\? url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_Top.js
@@ -22,3 +27,4 @@ hostname = app.bilibili.com, manga.bilibili.com, grpc.biliapi.net
 ^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/skin url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_PF.js
 # 动态去广告
 ^https:\/\/app\.bilibili\.com\/bilibili\.app\.(view\.v1\.View\/View|dynamic\.v2\.Dynamic\/DynAll)$ url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_Proto.js
+
