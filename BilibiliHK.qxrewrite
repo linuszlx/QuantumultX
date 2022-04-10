@@ -5,8 +5,7 @@ hostname = app.bilibili.com, manga.bilibili.com
 ^https?:\/\/app\.bilibili\.com\/((x\/v2|pgc)\/(search\/defaultword|season\/rank\/cn)|(pgc/season/rank/cn|x/v2/(search/(defaultword|hot|recommend|resource)))) url reject-dict
 ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.comic\/flash url reject-dict
 
-# 分区优化
-^https?:\/\/app\.bilibili\.com\/x\/v2\/channel\/region\/list\? url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_FQ.js
+
 # 标签页处理
 ^https:\/\/app\.bilibili\.com\/x\/resource\/show\/tab url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/BiliHK_HP.js
 # 我的页面处理
