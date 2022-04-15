@@ -3,7 +3,7 @@
   "name": "Linuszlx 脚本订阅",
   "description": "该订阅兼容BoxJs以及QX Gallery",
   "author": "@linuszlx",
-  "icon": "https://raw.githubusercontent.com/linuszlx/QuantumultX/main/avatars2.jpeg,
+  "icon": "https://raw.githubusercontent.com/linuszlx/QuantumultX/main/avatars2.jpeg",
   "repo": "https://github.com/linuszlx",
   "apps": [{
     "id": "多合一签到",
