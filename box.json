@@ -208,6 +208,12 @@
       "type": "boolean",
       "desc": "开启后将不再发出切换策略通知"
     }, {
+      "id": "BiliDoubanRating",
+      "name": "豆瓣评分",
+      "val": true,
+      "type": "boolean",
+      "desc": "关闭后将不再查询豆瓣评分, 可显著提高相关页面载入速度"
+    }, {
       "id": "BiliArea_Policy",
       "name": "策略组名",
       "val": "",
