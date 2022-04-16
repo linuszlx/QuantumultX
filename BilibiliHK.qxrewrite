@@ -15,4 +15,4 @@ hostname = ap?.bilibili.com, manga.bilibili.com
 # 首页优化处理
 ^https?:\/\/api\.bilibili\.com\/pgc\/page\/bangumi\? url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_pgc_home.js
 ^https?:\/\/api\.bilibili\.com\/pgc\/page\/cinema\/tab\? url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_pgc_cinema.js
-^https?:\/\/api\.bilibili\.com\/pgc\/page\?actionKey url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_pgc_FQ.js
+^https?:\/\/api\.bilibili\.com\/pgc\/page\?(access_key|actionKey) url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_pgc_FQ.js
