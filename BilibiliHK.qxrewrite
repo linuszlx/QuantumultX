@@ -10,11 +10,11 @@ http://203.107.1.(33|34|65|66)/191607/resolve\?host=(api|app).bilibili.com url s
 
 # 标签页处理
 ^https:\/\/app\.bilibili\.com\/x\/resource\/show\/tab url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_HP.js
+# 分区优化
+^https?:\/\/app\.bilibili\.com\/x\/v2\/channel\/region\/list\? url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_FQ.js
 # 我的页面处理
 ^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_Pg.js
 # 去除皮肤
 ^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/skin url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_PF.js
 # 首页优化处理
-^https?:\/\/api\.bilibili\.com\/pgc\/page\/bangumi\? url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_pgc_home.js
-^https?:\/\/api\.bilibili\.com\/pgc\/page\/cinema\/tab\? url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_pgc_cinema.js
 ^https?:\/\/api\.bilibili\.com\/pgc\/page\?(access_key|actionKey) url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_pgc_FQ.js
