@@ -5,8 +5,6 @@
 # 知乎关注页面流去视频
 ^https?:\/\/api\.zhihu\.com\/moments_v2\?action url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu_Follow.js
 ^https?:\/\/api\.zhihu\.com\/moments_v2\?feed url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu_Follow.js
-# 知乎屏蔽视频页面视频
-^https?:\/\/api.zhihu.com\/zvideo-tabs\/tabs\/choice\/feeds\/ url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu-VideoF.js
 # 知乎回答列表去广告
 ^https?:\/\/api\.zhihu\.com\/v4\/questions url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu-Plus.js
 # 知乎评论去广告
@@ -25,7 +23,7 @@ URL-REGEX,^https?:\/\/api\.zhihu\.com\/commercial_api\/launch_v2\? url reject-di
 # 屏蔽消息页面上拉的用户精选
 ^https?:\/\/api\.zhihu\.com/moments/hybrid\? url reject-dict
 # 知乎下发的配置，如皮肤等
-^https?:\/\/api\.zhihu\.com\/ab\/api\/v1\/products\/zhihu\/platforms\/ios\/config url reject-200
+# ^https?:\/\/api\.zhihu\.com\/ab\/api\/v1\/products\/zhihu\/platforms\/ios\/config url reject-200
 # 知乎去除Tab页关注人头像
 ^https?:\/\/api\.zhihu\.com\/moments\/tab_v2 url reject-dict
 
