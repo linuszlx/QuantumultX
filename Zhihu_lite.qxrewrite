@@ -2,6 +2,7 @@
 ^https?:\/\/api\.zhihu\.com\/(moments|topstory)(\/|\?)?(recommend|action=|feed_type=)(?!\/people) url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu-Lite.js
 # 知乎回答列表去广告
 ^https?:\/\/api\.zhihu\.com\/v4\/questions url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu-Lite.js
+^https?:\/\/api\.zhihu\.com\/questions url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu-Lite.js
 # 屏蔽视频流
 ^https?:\/\/api\.zhihu\.com\/zvideo-tabs\/tabs\?version=2 url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu-Video.js
 # 知乎去除回答下的广告
