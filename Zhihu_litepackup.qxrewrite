@@ -1,0 +1,15 @@
+# 知乎信息流去广告
+^https?:\/\/api\.zhihu\.com\/(moments|topstory)(\/|\?)?(recommend|action=|feed_type=)(?!\/people) url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu-Lite.js
+# 知乎回答列表去广告
+^https?:\/\/api\.zhihu\.com\/v4\/questions url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu-Lite.js
+^https?:\/\/api\.zhihu\.com\/questions url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu-Lite.js
+# 屏蔽视频流
+^https?:\/\/api\.zhihu\.com\/zvideo-tabs\/tabs\?version=2 url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu-Video.js
+# 知乎去除回答下的广告
+^https?:\/\/www\.zhihu\.com\/api\/v4\/answers\/\d+\/recommendations url reject-dict
+# 知乎去除文章下的推荐视频
+^https?:\/\/www\.zhihu\.com\/api\/v4\/articles\/\d+\/recommendation url reject-dict
+# 知乎其他广告拦截
+^https?:\/\/api\.zhihu\.com\/(v3\/package|me\/guides|drama\/living-info|ad|fringe|commercial|market\/popovers|.*featured-comment-ad) url reject-dict
+^https?:\/\/sugar\.zhihu\.com url reject-array
+hostname = *.zhihu.com,api.zhihu.com,sugar.zhihu.com
