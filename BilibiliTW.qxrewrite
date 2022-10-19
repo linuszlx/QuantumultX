@@ -1,13 +1,5 @@
 hostname = ap?.bilibili.com, manga.bilibili.com
 
-# 其他去广告
-^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash url reject-dict
-^https?:\/\/app\.bilibili\.com\/((x\/v2|pgc)\/(search\/defaultword|season\/rank\/cn)|(pgc/season/rank/cn|x/v2/(search/(defaultword|hot|recommend|resource)))) url reject-dict
-^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.comic\/flash url reject-dict
-
-# 屏蔽DNS
-http://203.107.1.(33|34|65|66)/191607/resolve\?host=(api|app).bilibili.com url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/BiliDns.js
-
 # 标签页处理
 #^https:\/\/app\.bilibili\.com\/x\/resource\/show\/tab url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/BiliTW_HP.js
 # 分区优化
