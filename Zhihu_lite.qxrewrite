@@ -1,5 +1,8 @@
 # 知乎去除文章下的推荐视频
 ^https?:\/\/www\.zhihu\.com\/api\/v4\/articles\/\d+\/recommendation url reject-dict
+# 知乎回答列表去广告
+^https?:\/\/api\.zhihu\.com\/v4\/questions url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu-Lite.js
+^https?:\/\/api\.zhihu\.com\/questions url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu-Lite.js
 # 知乎下发的配置，如皮肤等
 ^https?:\/\/api\.zhihu\.com\/ab\/api\/v1\/products\/zhihu\/platforms\/ios\/config url reject-200
 # 知乎其他广告拦截
