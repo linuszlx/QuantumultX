@@ -70,5 +70,131 @@
     "author": "@linuszlx",
     "repo": "https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_Auto_Regions.js",
     "icons": ["https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/bilibili.png", "https://raw.githubusercontent.com/NobyDa/mini/master/Color/bilibili.png"]
-  }]
+  },,
+    {
+      "id": "blackmatrix7.zhihu",
+      "name": "知乎助手",
+      "keys": [
+        "zhihu_blocked_users",
+        "zhihu_current_userinfo",
+        "zhihu_keyword_block"
+      ],
+      "author": "@blackmatrix7",
+      "repo": "https://github.com/blackmatrix7/ios_rule_script/tree/master/script/zhihu",
+      "icons": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu.png",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu.png"
+      ],
+      "descs_html": [
+        "<h4 align=\"left\">具体功能说明查看<a href=\"https://github.com/blackmatrix7/ios_rule_script/tree/master/script/zhihu#readme\">README.md</a></h4>",
+        "<h4 align=\"left\">✨为Plus版本专属功能，❓为已过时或即将淘汰功能</h4>",
+        "<h4 align=\"left\">切换Lite、Plus版本，或出现异常请执行数据清理</h4>"
+      ],
+      "scripts": [
+        {
+          "name": "知乎助手数据清理",
+          "script": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js"
+        }
+      ],
+      "settings": [
+        {
+          "id": "zhihu_settings_recommend_stream",
+          "name": "屏蔽推荐页流媒体",
+          "val": false,
+          "type": "boolean",
+          "desc": "屏蔽推荐页中的视频、直播等流媒体信息"
+        },
+        {
+          "id": "zhihu_settings_moments_stream",
+          "name": "屏蔽关注页流媒体",
+          "val": false,
+          "type": "boolean",
+          "desc": "屏蔽关注页中的“最新视频”"
+        },
+        {
+          "id": "zhihu_settings_hot_list",
+          "name": "热榜去广告",
+          "val": true,
+          "type": "boolean",
+          "desc": "去除知乎热榜页面的广告"
+        },
+        {
+          "id": "zhihu_settings_fake_vip",
+          "name": "显示为盐选会员",
+          "val": false,
+          "type": "boolean",
+          "desc": "非会员用户显示为盐选会员，屏蔽关键词解锁需要开启此功能"
+        },
+        {
+          "id": "zhihu_settings_preset_words",
+          "name": "屏蔽预置关键词广告",
+          "val": false,
+          "type": "boolean",
+          "desc": "屏蔽搜索页中的预置关键词广告"
+        },
+        {
+          "id": "zhihu_settings_remove_article",
+          "name": "屏蔽推荐页中的文章",
+          "val": false,
+          "type": "boolean",
+          "desc": "屏蔽推荐页中的文章，默认不启用"
+        },
+        {
+          "id": "zhihu_settings_blocked_users",
+          "name": "黑名单屏蔽效果增强✨",
+          "val": true,
+          "type": "boolean",
+          "desc": "增强知乎APP黑名单用户屏蔽效果"
+        },
+        {
+          "id": "zhihu_settings_blocked_keywords",
+          "name": "推荐页关键词过滤✨",
+          "val": true,
+          "type": "boolean",
+          "desc": "除普通关键词外还支持正则表达式过滤"
+        },
+        {
+          "id": "zhihu_settings_sys_msg",
+          "name": "屏蔽官方账号推广消息✨",
+          "val": false,
+          "type": "boolean",
+          "desc": "屏蔽消息页内的官方账号推广消息"
+        },
+        {
+          "id": "zhihu_settings_answer_tip",
+          "name": "付费内容/营销推广/购物推广提醒✨",
+          "val": true,
+          "type": "boolean",
+          "desc": "在知乎回答中提示付费或营销内容"
+        },
+        {
+          "id": "zhihu_settings_remove_sections",
+          "name": "移除推荐页顶部项✨",
+          "val": false,
+          "type": "boolean",
+          "desc": "知乎8.3.0有效，仅保留全部和直播，直播无法去除"
+        },
+        {
+          "id": "zhihu_settings_app_conf",
+          "name": "去除推荐页多余标签❓",
+          "val": false,
+          "type": "boolean",
+          "desc": "知乎7.x及以上版本无效"
+        },
+        {
+          "id": "zhihu_settings_hot_search",
+          "name": "知乎热搜去广告❓",
+          "val": false,
+          "type": "boolean",
+          "desc": "知乎7.x及以上版本无效"
+        },
+        {
+          "id": "zhihu_keyword_block",
+          "name": "知乎屏蔽关键词",
+          "val": "",
+          "type": "textarea",
+          "desc": "必须是JSON格式，Key为用户Id，不要修改。格式不正确可能导致执行异常。"
+        }
+      ]
+    }]
 }
