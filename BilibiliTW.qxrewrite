@@ -1,7 +1,5 @@
-hostname = ap?.bilibili.com, manga.bilibili.com
+hostname = app.bilibili.com
 
-# 标签页处理
-#^https:\/\/app\.bilibili\.com\/x\/resource\/show\/tab url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/BiliTW_HP.js
 # 分区优化
 ^https?:\/\/app\.bilibili\.com\/x\/v2\/channel\/region\/list\? url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_FQ.js
 # 去除皮肤
