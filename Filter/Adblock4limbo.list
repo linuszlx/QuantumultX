@@ -5,6 +5,8 @@
 ## Last updated at 30/3月/2022/00:00  
 ## */  
 
+DOMAIN-SUFFIX, u3.ucweb.com, reject 
+
 ##### https://javmost.xyz/  
 #DOMAIN,delivery-node-aziz.voe-network.net, reject
 #DOMAIN,inspiringaccurate.com, reject
