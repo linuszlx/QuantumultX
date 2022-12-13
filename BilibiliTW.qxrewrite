@@ -8,4 +8,4 @@ hostname = *.bilibili.com,*.biliapi.net,*.biliapi.com, -broadcast.chat.bilibili.
 ^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/skin url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_PF.js
 # 页面优化
 ^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/bangumi\? url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_pgc_home.js
-^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/cinema\ url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_pgc_cinema.js
+^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/cinema\tab\? url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_pgc_cinema.js
