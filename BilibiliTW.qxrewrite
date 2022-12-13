@@ -6,3 +6,6 @@ hostname = *.bilibili.com,*.biliapi.net,*.biliapi.com, -broadcast.chat.bilibili.
 ^https?:\/\/app\.bilibili\.com\/x\/v2\/channel\/region\/list\? url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_FQ.js
 # 去除皮肤
 ^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/skin url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_PF.js
+# 页面优化
+^https?:\/\/app\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/bangumi url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_pgc_home.js
+^https?:\/\/app\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/cinema url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_pgc_cinema.js
