@@ -98,7 +98,7 @@ hostname = *.bilibili.com,*.biliapi.net,*.biliapi.com,api.live.bilibili.com,api.
 # ～ BiliBili_哔哩哔哩_直播去广告@bm7
 ^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bilibili_json.js
 # ～ BiliBili_哔哩哔哩_标签页处理@ddgksf2013
-^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bilibili_json.js
+^https?:\/\/app\.(bilibili|biliapi)\.(com|net)\/x\/resource\/show\/tab url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bilibili_json.js
 # ～ BiliBili_哔哩哔哩_我的页面处理@ddgksf2013
 ^https?:\/\/app\.(bilibili|biliapi)\.(com|net)\/x\/v2\/account\/mine url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bilibili_json.js
 # ～ BiliBili_哔哩哔哩_Proto去广告@app2smile
