@@ -61,7 +61,7 @@
 //2022-12-05 38、去除推荐页顶部的banner,修复追番与观影页面打开时app闪退的bug，修复开屏脚本提示错误
 //2022-12-09 39、去除皮肤设置重写，以防与新的皮肤设置脚本冲突
 
-hostname = *.bilibili.com,*.biliapi.net,*.biliapi.com,api.live.bilibili.com,api.vc.bilibili.com, -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.net
+hostname = app.bilibili.com,api.bilibili.com,*.biliapi.net,*.biliapi.com,api.live.bilibili.com,api.vc.bilibili.com
 
 # ～ BiliBili_哔哩哔哩_屏蔽直播间商品广告浮窗@ddgksf2013
 ^https?:\/\/api\.live\.bilibili\.com\/xlive\/e-commerce-interface\/v\d\/ecommerce-user\/get_shopping_info\? url reject-dict
