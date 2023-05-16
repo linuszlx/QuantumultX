@@ -881,7 +881,6 @@ host-keyword,vs10.bj2ct.u3.ucweb.com,reject
 host,navigis.uc.cn,reject
 host,restapi.amap.com,reject
 host,order.sm.cn,reject
-host,ucdc-upaas.uc.cn,reject
 host,access.open.uc.cn,reject
 host,uc.ucweb.com,reject
 host,emoji.uc.cn,reject
