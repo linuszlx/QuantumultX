@@ -882,7 +882,6 @@ host,navigis.uc.cn,reject
 host,restapi.amap.com,reject
 host,order.sm.cn,reject
 host,access.open.uc.cn,reject
-host,uc.ucweb.com,reject
 host,emoji.uc.cn,reject
 host,ssp-partner.alibaba.com,reject
 host,voice-service.uc.cn,reject
