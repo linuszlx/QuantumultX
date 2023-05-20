@@ -210,7 +210,6 @@ HOST,hmma.baidu.com,reject
 # > 百度贴吧屏蔽域名dns查询
 IP-CIDR,180.76.76.200/32,REJECT
 # > 哔哩哔哩
-HOST-SUFFIX,cm.bilibili.com,reject
 host-keyword,api.sobot.com,reject
 HOST-SUFFIX,cm.ad.bilibili.com,reject
 HOST-SUFFIX,cm.adcommon.bilibili.com,reject
