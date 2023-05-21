@@ -63,7 +63,8 @@
 
 hostname = -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.net, app.bilibili.com, api.live.bilibili.com, *.bilibili.com, *.bilibili.*, grpc.biliapi.net,*biliapi.net
 
-
+# ～ BiliBili_哔哩哔哩_视频播放下方商品推广@ddgksf2013
+^https?:\/\/api\.bili(api|bili)\.(net|com)\/pgc\/season\/app\/related\/recommend\? url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bilibili_json.js
 # ～ BiliBili_哔哩哔哩_屏蔽直播间商品广告浮窗@ddgksf2013
 ^https?:\/\/api\.live\.bilibili\.com\/xlive\/e-commerce-interface\/v\d\/ecommerce-user\/get_shopping_info\? url reject-dict
 # ～ BiliBili_哔哩哔哩_屏蔽广告浮窗@ddgksf2013
