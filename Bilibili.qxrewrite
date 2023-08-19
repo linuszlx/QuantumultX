@@ -59,6 +59,8 @@ hostname = -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.
 ^https?:\/\/app\.(bilibili|biliapi)\.(com|net)\/x\/v2\/account\/mine url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bilibili_json.js
 # ～ BiliBili_哔哩哔哩_UP主推荐广告[适配ipad端]@app2smile@ddgksf2013
 ^https?:\/\/app\.bilibili\.com\/bilibili\.app\.view\.v1\.View\/View$ url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_Proto.js
+# ～ BiliBili_哔哩哔哩_青少年弹窗@BiliUniverse
+^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.interface\.v1\.Teenagers\/ModeStatus url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/bilibili_proto_beta.js
 # ～ BiliBili_哔哩哔哩_动态页面去广告@app2smile@kokoryh@ddgksf2013
 ^https?:\/\/app\.bilibili\.com\/bilibili\.app\.dynamic\.v2\.Dynamic\/DynAll$ url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_Proto.js
 # ～ BiliBili_哔哩哔哩_启动时开启直连模式[自行启用]@ddgksf2013
