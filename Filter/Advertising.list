@@ -815,14 +815,6 @@ HOST,wa.gtimg.com,reject
 # HOST,wxsnsdy.wxs.qq.com,reject
 # HOST,wxsnsdythumb.wxs.qq.com,reject
 # > 腾讯视频
-host-suffix,tetrack.qq.com,reject
-host-suffix,tpns.tencent.com,reject
-host-suffix,api.poll.video.qq.com,reject
-host-suffix,static-res.qq.com,reject
-host-suffix,stat.tpns.tencent.com,reject
-host,h.trace.qq.com,reject
-host-keyword,omgmta.qq.com,reject
-host-keyword,omgmta1.qq.com,reject
 HOST, adsmind.gdtimg.com, REJECT
 HOST, btrace.qq.com, REJECT
 HOST, info4.video.qq.com, REJECT
@@ -831,12 +823,6 @@ HOST, ios.video.mpush.qq.com, REJECT
 HOST, mtrace.qq.com, REJECT
 HOST, pgdt.gtimg.cn, REJECT
 HOST, vv.video.qq.com, REJECT
-HOST, btrace.video.qq.com, REJECT
-HOST, p.l.qq.com, REJECT
-HOST, rpt.gdt.qq.com, REJECT
-HOST, trace.qq.com, REJECT
-host-suffix,config.ab.qq.com,REJECT
-host-suffix,content.rconfig.qq.com,REJECT
 
 # > 腾讯音乐
 HOST,adserviceretry.kugou.com,reject
