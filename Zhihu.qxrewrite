@@ -18,11 +18,11 @@
 
 # 我的页面 项目列表,会员卡片
 ^https:\/\/api\.zhihu\.com\/me\/guides url reject-dict
-^https:\/\/api\.zhihu\.com\/unlimited\/go\/my_card url reject
+#^https:\/\/api\.zhihu\.com\/unlimited\/go\/my_card url reject
 
 # 搜索页 关键词,猜你想搜
 ^https:\/\/api\.zhihu\.com\/search\/preset_words url reject-dict
-^https:\/\/api\.zhihu\.com\/search\/recommend_query\/v2\? url response-body "recommend_queries":\{.+\} response-body "recommend_queries":{}
+#^https:\/\/api\.zhihu\.com\/search\/recommend_query\/v2\? url response-body "recommend_queries":\{.+\} response-body "recommend_queries":{}
 ^https:\/\/www\.zhihu\.com\/api\/v4\/search\/related_queries\/(article|answer)\/\d+ url reject-dict
 
 # 回答详情页,评论区顶部,下一个回答
@@ -40,13 +40,5 @@
 ^https:\/\/appcloud2\.zhihu\.com\/v3\/resource\?group_name=mp url reject-dict
 ^https:\/\/link\.zhihu\.com\/\?target=(https?)?(%3A|:)?(\/\/|%2F%2F)?(.*?)(&source.*)?$ url 302 http://$4
 ^https:\/\/m-cloud\.zhihu\.com\/api\/cloud\/config\/all\? url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu.js
-
-# 网页版去广告 //www.zhihu.com, zhuanlan.zhihu.com
-^https:\/\/api\.zhihu\.com\/distribute\/rhea\/qa_ad_card\/h5\/recommendation\? url reject-dict
-^https:\/\/www\.zhihu\.com\/api\/v4\/hot_recommendation url reject
-^https:\/\/www\.zhihu\.com\/api\/v4\/mcn\/v2\/linkcards\? url reject
-^https:\/\/www\.zhihu\.com\/api\/v4/(answers|questions)\/\d+/related-readings url reject
-^https:\/\/www\.zhihu\.com\/commercial_api\/banners_v3\/mobile_banner url reject
-^https:\/\/zhuanlan\.zhihu\.com\/api\/articles\/\d+\/recommendation url reject
 
 hostname = 118.89.204.198,103.41.167.237,2402:4e00:1200:ed00:0:9089:6dac:96b6,www.zhihu.com,api.zhihu.com,zhuanlan.zhihu.com,appcloud2.zhihu.com,m-cloud.zhihu.com,103.41.167.236,103.41.167.234,103.41.167.235,103.41.167.226
