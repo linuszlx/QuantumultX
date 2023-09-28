@@ -826,7 +826,6 @@ HOST, p.l.qq.com, REJECT
 HOST, pgdt.gtimg.cn, REJECT
 HOST, rpt.gdt.qq.com, REJECT
 HOST-SUFFIX, trace.qq.com, REJECT
-
 # > 腾讯音乐
 HOST,adserviceretry.kugou.com,reject
 HOST,ads.service.kugou.com,reject
@@ -1130,52 +1129,19 @@ HOST,ads.finance.yahoo.com,reject
 HOST,ads.yahoo.com,reject
 HOST,ads.yahoo.de,reject
 # > 优酷
-HOST-SUFFIX,atm.youku.com,reject
-HOST,ad.mobile.youku.com,reject
-HOST,iyes.youku.com,reject
-HOST,pl.cp31.ott.cibntv.net,reject
-HOST-SUFFIX,actives.youku.com,reject
-HOST-SUFFIX,ad.api.3g.tudou.com,reject
-HOST-SUFFIX,ad.api.3g.youku.com,reject
-HOST-SUFFIX,ad.api.mobile.youku.com,reject
-HOST-SUFFIX,a-dxk.play.api.3g.youku.com,reject
-HOST-SUFFIX,b.smartvideo.youku.com,reject
-HOST-SUFFIX,c.yes.youku.com,reject
-HOST-SUFFIX,das.api.youku.com,reject
-HOST-SUFFIX,das.mobile.youku.com,reject
-HOST-SUFFIX,dev-push.m.youku.com,reject
-HOST-SUFFIX,dl.g.youku.com,reject
-HOST-SUFFIX,dmapp.youku.com,reject
-HOST-SUFFIX,gamex.mobile.youku.com,reject
-HOST-SUFFIX,hudong.pl.youku.com,reject
-HOST-SUFFIX,huodong.pl.youku.com,reject
-HOST-SUFFIX,huodong.vip.youku.com,reject
-HOST-SUFFIX,hz.youku.com,reject
-HOST-SUFFIX,l.ykimg.com,reject
-HOST-SUFFIX,lstat.youku.com,reject
-HOST-SUFFIX,m.yes.youku.com,reject
-HOST-SUFFIX,mobilemsg.youku.com,reject
-HOST-SUFFIX,msg.youku.com,reject
-HOST-SUFFIX,myes.youku.com,reject
-HOST-SUFFIX,p.l.youku.com,reject
-HOST-SUFFIX,passport-log.youku.com,reject
-HOST-SUFFIX,p-log.ykimg.com,reject
-HOST-SUFFIX,push.m.youku.com,reject
-HOST-SUFFIX,r.l.youku.com,reject
-HOST-SUFFIX,s.p.youku.com,reject
-HOST-SUFFIX,sdk.api.gamex.mobile.youku.com,reject
-HOST-SUFFIX,sdk.m.youku.com,reject
-HOST-SUFFIX,stat.youku.com,reject
-HOST-SUFFIX,store.tv.api.3g.youku.com,reject
-HOST-SUFFIX,store.xl.api.3g.youku.com,reject
-HOST-SUFFIX,tdrec.youku.com,reject
-HOST-SUFFIX,test.ott.youku.com,reject
-HOST-SUFFIX,urchin.lstat.youku.com,reject
-HOST-SUFFIX,v.l.youku.com,reject
-HOST-SUFFIX,val.api.youku.com,reject
-HOST-SUFFIX,wan.youku.com,reject
-HOST-SUFFIX,ykatr.youku.com,reject
-HOST-SUFFIX,ykrec.youku.com,reject
+HOST, adsmind.ugdtimg.com, REJECT
+HOST, amdc.m.youku.com, REJECT
+HOST, apiv4-iyes.youku.com, REJECT
+HOST, httpdns.alicdn.com, REJECT
+HOST, huichuan-mc.sm.cn, REJECT
+HOST, huichuan.sm.cn, REJECT
+HOST, iyes.youku.com, REJECT
+HOST, m-vali.cp31.ott.cibntv.net, REJECT
+HOST, mc.atm.youku.com, REJECT
+HOST, vali-g1.cp31.ott.cibntv.net, REJECT
+HOST, vali-ugc.cp31.ott.cibntv.net, REJECT
+HOST, yk-ssp.ad.youku.com, REJECT
+HOST, ykad-data.youku.com, REJECT
 # > 易车
 HOST,adx.yiche.com,reject
 HOST,log.ycapp.yiche.com,reject
