@@ -815,6 +815,7 @@ HOST,wa.gtimg.com,reject
 # HOST,wxsnsdy.wxs.qq.com,reject
 # HOST,wxsnsdythumb.wxs.qq.com,reject
 # > 腾讯视频
+# 腾讯
 HOST, adsmind.gdtimg.com, REJECT
 HOST, btrace.qq.com, REJECT
 HOST, btrace.video.qq.com, REJECT
@@ -822,9 +823,13 @@ HOST, info4.video.qq.com, REJECT
 HOST, info6.video.qq.com, REJECT
 HOST, ios.video.mpush.qq.com, REJECT
 HOST, mtrace.qq.com, REJECT
+HOST, otheve.beacon.qq.com, REJECT
 HOST, p.l.qq.com, REJECT
 HOST, pgdt.gtimg.cn, REJECT
 HOST, rpt.gdt.qq.com, REJECT
+HOST, tpns.qq.com, REJECT
+HOST, tytx.m.cn.miaozhen.com, REJECT
+HOST, vv6.video.qq.com, REJECT
 HOST-SUFFIX, trace.qq.com, REJECT
 # > 腾讯音乐
 HOST,adserviceretry.kugou.com,reject
