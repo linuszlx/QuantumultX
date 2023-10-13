@@ -81,10 +81,3 @@ hostname = -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.
 ^https:\/\/(app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.(view|viewunite)\.v1\.View\/(View|ViewProgress) url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_Proto.js
 # ～ BiliBili_哔哩哔哩_动态综合页及视频页去广告@BiliUniverse
 ^https:\/\/(app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.dynamic\.v2\.Dynamic\/DynAll url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_Proto.js
-
-
-# ======= BiliNotAdded ======= #
-# ～ BiliBili_哔哩哔哩_启动时开启直连模式[自行启用]@ddgksf2013
-;^https?:\/\/app\.bilibili\.com\/x\/resource\/domain url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bilibili_startup_direct.js
-# ～ BiliBili_哔哩哔哩_去除统一设置的皮肤[注释留存]@ddgksf2013
-;^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/skin\? url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bilibili_json.js
