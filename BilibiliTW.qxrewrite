@@ -9,5 +9,5 @@ hostname = *.bilibili.com,*.biliapi.net,*.biliapi.com, -broadcast.chat.bilibili.
 # 页面优化
 ^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/bangumi\? url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_pgc_home.js
 ^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/cinema\/tab\? url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_pgc_cinema.js
-^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/?actionKey=appkey&ad_extra= url script-response-body https://github.com/linuszlx/JS/blob/main/Bilibili/Bili_pgc_tab.js
-^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/?access_key url script-response-body https://github.com/linuszlx/JS/blob/main/Bilibili/Bili_pgc_tab.js
+^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\?actionKey=appkey&ad_extra= url script-response-body https://github.com/linuszlx/JS/blob/main/Bilibili/Bili_pgc_tab.js
+^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\?access_key url script-response-body https://github.com/linuszlx/JS/blob/main/Bilibili/Bili_pgc_tab.js
