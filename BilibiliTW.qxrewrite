@@ -11,5 +11,6 @@ hostname = *.bilibili.com,*.biliapi.net,*.biliapi.com, -broadcast.chat.bilibili.
 ^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/cinema\/movie\? url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_pgc_cinema.js
 ^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/\?actionKey=appkey&ad_extra= url script-response-body  https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_pgc_tab.js
 ^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/cinema\/tab\?actionKey=appkey&ad_extra= url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_pgc.js
+^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/cinema\/tab\?access_key= url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_pgc.js
 ^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/\?access_key url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_pgc_tab.js
 ^https?:\/\/app\.bilibili\.com\/x\/v2\/region\/index\?actionKey=appkey&appkey= url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_YH.js
