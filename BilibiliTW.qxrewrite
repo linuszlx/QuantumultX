@@ -1,4 +1,4 @@
-hostname = *.bilibili.com,*.biliapi.net,*.biliapi.com, -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.net
+hostname = *.bilibili.com,*.biliapi.com, -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.net
 
 # 标签页处理
 ^https?:\/\/app\.(bilibili|biliapi)\.(com|net)\/x\/resource\/show\/tab url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Bilibili/Bili_HP.js
