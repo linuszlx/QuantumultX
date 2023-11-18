@@ -39,6 +39,9 @@
 # 推荐页搜索栏左侧图标
 ^https?:\/\/api\.zhihu\.com\/feed\/render\/revisit\/current_reading url reject-dict
 
+# 顶部TAB
+^https:\/\/api\.zhihu\.com\/feed\/render\/tab\/config\? url script-response-body https://raw.githubusercontent.com/linuszlx/JS/main/Zhihu/Zhihu-Tab.js
+
 # 疑似推荐页内容更新红点
 ^https?:\/\/api\.zhihu\.com\/feed\/render\/revisit\/tag_config url reject-dict
 
