@@ -21,6 +21,7 @@ HOST,login.live.com,Game
 HOST,logincdn.msauth.net,Game
 HOST,store-images.s-microsoft.com,Game
 HOST-SUFFIX,battle.net,Game
+HOST-SUFFIX,backtrace.io,Game
 HOST-SUFFIX,blizzard.com,Game
 HOST-SUFFIX,battlenet.com,Game
 HOST-SUFFIX,battlenet.com.cn,Game
